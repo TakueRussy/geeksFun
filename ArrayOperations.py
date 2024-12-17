@@ -15,6 +15,8 @@ def searchEle(arr, x):
         if x==arr[i]:
             return True
     return False
+
+
     
 
 # insert element if you have inserted properly 1 will be printed else 0
@@ -27,8 +29,8 @@ def insertEle(arr, y, yi):
     elif len(arr)>yi:
         first= arr[:yi]
         last=arr[yi:]
-        arr[yi]=[y]
-        final= first + arr[yi] +last
+        first.append(y)
+        final= first+last
         print(final)
         return True
     else:
@@ -59,5 +61,5 @@ def deleteEle(arr, z):
     else:
         return False
                 
-arr=[1,2,3,4,5,6]      
+arr=[]      
         
